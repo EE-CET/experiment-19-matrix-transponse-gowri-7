@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class MatrixTranspose {
@@ -24,9 +23,13 @@ public class MatrixTranspose {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.print(mat[i][j] + " ");
+                if (j != n - 1)
+                    System.out.print(mat[i][j] + " ");
+                else
+                    System.out.print(mat[i][j]);
             }
-            System.out.println();
+            if (i != n - 1)
+                System.out.println();
         }
     }
 }
